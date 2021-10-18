@@ -51,8 +51,7 @@ else {
 
 /*
 
-
-//jsnack3 
+//jsnack3
 //Il software deve chiedere per 10 volte all’utente di inserire un numero.
 let Risultato = 0
 for (let i = 0; i < 10; i++) {
@@ -106,25 +105,39 @@ else {
 /* Crea un array vuoto.
 Chiedi per 6 volte all’utente di inserire un numero,
 se è dispari inseriscilo nell’array.
- */
-
 
 let array = [];
 for (let i = 0; i < 6; i++) {
     const element = parseInt(prompt("inserisci un numero"));
     console.log(element);
 
-    if (element == 1 | element % 2 + 1) {
+    if (element % 2 != 0) {
         array.push(element);
     }
 }
 
 console.log(array);
 
+*/
+
+//jsnack 6
+
+/*
+// chiedo all'utente di inserire un numero N
+let userNumber = parseInt(prompt("Inserisci un numero"))
+// calcolo il cubo di N
+let cubo = userNumber * userNumber * userNumber
+// stampo il cubo di N
+document.getElementById("message").innerHTML = "il cubo del numero che hai inserito è" + cubo
+*/
 
 
-/* for (let i = 0; i < 10; i++) {
-    let Usernumber = parseInt(prompt("inserisci un numero"));
-    console.log(Usernumber);
-    Risultato += Usernumber;
- */
+//jsnack 7
+// stampa le potenze di 2 fino a 1000
+
+for (let i = 0; i < 1000; i++) {
+    let potenza = Math.pow(2, i);
+    // console.log(potenza);
+    document.getElementById("message").innerHTML += potenza + "<br>";
+}
+
